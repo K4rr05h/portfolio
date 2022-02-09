@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+/* .logo{
+    align-items: center;
+    background-color: black;
+} */
+
+/* .navbar{
+    align-content: right;
+    background-color: blue;
+} */
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabeçalho-menu-logo {
+    height: 100px;
+}
+
+.cabeçalho-navbar-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabeçalho-navbar-menu-item {
+    font-family: 'sarala', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.titulo1 {
+    font-family: 'Righteous', cursive;
+}
+
+.titulo2 {
+    font-family: 'sarala', sans-serif;
+}
