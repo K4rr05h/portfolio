@@ -60,7 +60,8 @@ h1 {
 }
 
 .cabeçalho-navbar-menu-item:hover {
-    color: #11FFFF;
+    color: #3f4444;
+    cursor: pointer;
 }
 /* --------------------- Header do site FIM --------------------- */
 
@@ -157,6 +158,7 @@ h1 {
     background-color: #BDC4FF;
 
     color: black;
+    cursor: pointer;
 }
 
 /* Botões de Títulos de Projetos FIM */
@@ -171,7 +173,7 @@ h1 {
 }
 
 /* Visual dos botões de cada proejto INÍCIO */
-.botoes-projetos-especifico-iten {
+.botoes-projetos-especifico-uu {
     border: 4px solid #BDC4FF;
     box-sizing: border-box;
     filter: drop-shadow(0px 5px 20px rgba(255, 255, 255, 0.3));
@@ -185,51 +187,87 @@ h1 {
     padding: 30px;
     height: 100px;
     width: 230px;
+
+    transition-duration: 0.4s;
 }
 
-.botoes-projetos-especifico-ux {
-    border: 4px solid #BDC4FF;
-    box-sizing: border-box;
-    filter: drop-shadow(0px 5px 20px rgba(255, 255, 255, 0.3));
-    border-radius: 4px;
-    background-color: Transparent;
-    background-repeat: no-repeat;
-
-    text-align: center;
-    font-size: 24px;
-    color: white;
-    padding: 30px;
-    height: 100px;
-    width: 230px;
-
-    transition-duration: 0.2s;
-
-    overflow: hidden;
+.botoes-projetos-especifico-uu:hover {
+    background-color: #747CC7;
+    color: #000000;
     cursor: pointer;
 }
 
-.botoes-projetos-especifico-ux:hover{
-    background-color: #242361;
+.botoes-projetos-especifico-de {
+    border: 4px solid #BDC4FF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 5px 20px rgba(255, 255, 255, 0.3));
+    border-radius: 4px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    padding: 30px;
+    height: 100px;
+    width: 230px;
+
+    transition-duration: 0.4s;
 }
-.botoes-projetos-especifico-ux:after {
-    content: "";
-    background: #f1f1f1;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 550%;
-    margin-left: -30px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 1s
-  }
-  
-  .botoes-projetos-especifico-ux:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-  }
+
+.botoes-projetos-especifico-de:hover {
+    background-color: #58DECE;
+    color: #000000;
+    cursor: pointer;
+}
+
+.botoes-projetos-especifico-fe {
+    border: 4px solid #BDC4FF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 5px 20px rgba(255, 255, 255, 0.3));
+    border-radius: 4px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    padding: 30px;
+    height: 100px;
+    width: 230px;
+
+    transition-duration: 0.4s;
+}
+
+.botoes-projetos-especifico-fe:hover {
+    background-color: #F08EF2;
+    color: #000000;
+    cursor: pointer;
+}
+
+.botoes-projetos-especifico-ga {
+    border: 4px solid #BDC4FF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 5px 20px rgba(255, 255, 255, 0.3));
+    border-radius: 4px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    padding: 30px;
+    height: 100px;
+    width: 230px;
+
+    transition-duration: 0.4s;
+}
+
+.botoes-projetos-especifico-ga:hover {
+    background-color: #7dccaf;
+    color: #000000;
+    cursor: pointer;
+}
 
 /* Visual dos botões de cada proejto FIM */
 
@@ -256,22 +294,24 @@ h1 {
 }
 
 .txt-area {
+    justify-content: center;
+    align-items: center;
+                                                                                                                        
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-left: 50vh;
-    padding-right: 50vh;
 
     gap:10px;
     padding-top: 10px;
 }
 
 .txt-area-desc {
+    justify-content: center;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-left: 50vh;
-    padding-right: 50vh;
+    align-self: center;
 
     padding-top: 10px;
 
@@ -280,6 +320,9 @@ h1 {
 .txt-area-contact {
     border: 3px solid white;
     border-radius: 5px;
+
+    height: 30px;
+    width: 400px;
 
     color: white;
     background-color: transparent;
@@ -292,13 +335,44 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
 }
 
 .btn-enviar-btn {
     margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    filter: drop-shadow(0px 2px 5px rgba(255, 255, 255, 0.3));
 
     width:80px;
     height:40px;
+
+    transition-duration: 0.4s;
+    
+    background-color: #dadada;
+    color: #000000;
+}
+
+.btn-enviar-btn:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.txt-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.xx {
+    display: flex;
+    flex-direction: column;
+}
+
+.xy {
+    display: flex;
+    flex-direction: column;
 }
 /* --------------------- Footer do site INÍCIO --------------------- */
 .footer {
